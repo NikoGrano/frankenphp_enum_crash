@@ -12,6 +12,8 @@ class BugProcessor implements ProcessorInterface
 
     public function process(mixed $data, Operation $operation, array $uriVariables = [], array $context = [])
     {
-        print_r(enum_exists(LanguageAlpha2::class));
+        print_r('Enum exists: '.enum_exists(LanguageAlpha2::class) ? 'yes' : 'no');
+
+        return [];
     }
 }
